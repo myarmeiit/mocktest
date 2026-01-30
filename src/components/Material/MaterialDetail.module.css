@@ -1,0 +1,108 @@
+.pageWrapper {
+    min-height: 100vh;
+    background-color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContent {
+    flex: 1;
+}
+
+.content {
+    padding: 2rem 0 4rem;
+}
+
+.backBtn {
+    background: none;
+    border: none;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: color 0.2s;
+}
+
+.backBtn:hover {
+    color: #4f46e5;
+}
+
+.pageTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 1rem;
+}
+
+.icon {
+    color: #10b981;
+    width: 32px;
+    height: 32px;
+}
+
+.cardHeader h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f8fafc;
+    color: #475569;
+}
+
+.checkIcon {
+    color: #10b981;
+}
+
+.learnBtn {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
+    background: white;
+    color: #1e293b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.learnBtn:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}

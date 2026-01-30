@@ -1,0 +1,76 @@
+.container {
+    margin-bottom: var(--spacing-xl);
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid #e2e8f0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 2px solid #f7fafc;
+    padding-bottom: var(--spacing-md);
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.icon {
+    color: var(--color-primary);
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+
+.content {
+    color: var(--color-text-main);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.content p {
+    margin-bottom: var(--spacing-md);
+}
+
+.brandName {
+    color: var(--color-success);
+    font-weight: 700;
+}
+
+.highlight {
+    color: var(--color-secondary);
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--spacing-lg);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-weight: 500;
+    color: var(--color-text-main);
+}
+
+.checkIcon {
+    color: var(--color-success);
+}

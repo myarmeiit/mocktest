@@ -1,0 +1,108 @@
+.section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    color: var(--color-primary);
+    border-left: 5px solid var(--color-success);
+    padding-left: var(--spacing-md);
+}
+
+.viewAll {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-accent);
+    font-weight: 500;
+    transition: gap 0.2s;
+}
+
+.viewAll:hover {
+    gap: 8px;
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #edf2f7;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.cardHeader {
+    margin-bottom: var(--spacing-md);
+}
+
+.badge {
+    display: inline-block;
+    background-color: #ebf8ff;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 99px;
+    text-transform: uppercase;
+}
+
+.examTitle {
+    font-size: 1.1rem;
+    color: var(--color-text-main);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.4;
+    flex: 1;
+    /* Pushes meta to bottom */
+}
+
+.meta {
+    display: flex;
+    gap: var(--spacing-md);
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.startBtn {
+    width: 100%;
+    background-color: white;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.card:hover .startBtn {
+    background-color: var(--color-primary);
+    color: white;
+}
