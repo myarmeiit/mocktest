@@ -13,14 +13,13 @@ const ExamDetail: React.FC = () => {
     const { examTitle, examQuestions, examTime } = location.state || {};
     const mockExam = getExamById(examId);
 
-    // Mock exam data - normally fetched by ID or passed via context/state
     const exam = {
         id: examId,
         title: examTitle || mockExam?.title || "Exam Title Not Found",
         category: "National High School Mock Exam",
-        candidate: "Admin User", // Could come from auth context
+        candidate: "Admin User", 
         questions: examQuestions || mockExam?.questions || 20,
-        duration: examTime || mockExam?.time || 35, // minutes
+        duration: examTime || mockExam?.time || 35, 
         highScore: mockExam?.score ?? 8.00
     };
 
@@ -30,13 +29,11 @@ const ExamDetail: React.FC = () => {
             <main className={styles.pageContainer}>
                 <div className="container">
                     <div className={styles.card}>
-                        {/* Header */}
                         <div className={styles.cardHeader}>
                             <FileText size={18} />
                             {exam.category}
                         </div>
 
-                        {/* Main Content */}
                         <div className={styles.mainContent}>
                             <h1 className={styles.examTitle}>{exam.title}</h1>
                             <div className={styles.candidateInfo}>
@@ -51,7 +48,6 @@ const ExamDetail: React.FC = () => {
                             </button>
                         </div>
 
-                        {/* Info Bar */}
                         <div className={styles.infoBar}>
                             <div className={styles.infoGroup}>
                                 <div className={`${styles.infoBadge} ${styles.badgeBlue}`}>
@@ -66,7 +62,6 @@ const ExamDetail: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Instructions Section */}
                         <div className={styles.instructionsSection}>
                             <h3><FileText size={18} /> Testing Instructions</h3>
                             <ul className={styles.instructionList}>
@@ -78,7 +73,6 @@ const ExamDetail: React.FC = () => {
                             </ul>
                         </div>
 
-                        {/* Footer Actions */}
                         <div className={styles.footerActions}>
                             {/* <div className={styles.pagination}>
                                 <button className={styles.pageBtn} disabled><ChevronsLeft size={16} /></button>
