@@ -8,10 +8,10 @@
     flex: 1;
 }
 
-.pageContainer {
+.resultContainer {
     padding: var(--spacing-xl) 0;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto var(--spacing-xl);
 }
 
 .scoreCard {

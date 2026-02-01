@@ -5,7 +5,6 @@ import MaterialsSection from '../Home/MaterialsSection';
 import styles from './ExamPage.module.css';
 
 const ExamPage: React.FC = () => {
-    // Scroll to top when page is loaded
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);

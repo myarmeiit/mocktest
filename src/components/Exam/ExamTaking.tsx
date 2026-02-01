@@ -58,14 +58,12 @@ const ExamTaking: React.FC = () => {
     const currentQuestion = questions[currentQuestionIndex];
     const answeredCount = Object.keys(answers).length;
 
-    // Feature 1: Auto-submit when time is up
     useEffect(() => {
         if (timeLeft === 0 && questions.length > 0) {
             submitExam(true);
         }
     }, [timeLeft, questions.length]);
 
-    // Feature 3: Warning when leaving the page
     useEffect(() => {
         const handleBeforeUnload = (e: BeforeUnloadEvent) => {
             if (answeredCount > 0 && timeLeft > 0) {

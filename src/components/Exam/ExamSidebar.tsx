@@ -4,10 +4,10 @@ import styles from './ExamTaking.module.css';
 interface ExamSidebarProps {
     answeredCount: number;
     totalQuestions: number;
-    questions: { id: number }[]; // Add actual questions to get real IDs
+    questions: { id: number }[]; 
     timeLeft: string;
     currentQuestionIndex: number;
-    answers: Record<number, string>; // questionId -> answer
+    answers: Record<number, string>; 
     markedForReview: Record<number, boolean>;
     onNavigate: (index: number) => void;
     onSubmit: () => void;
