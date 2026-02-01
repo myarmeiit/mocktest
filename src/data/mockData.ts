@@ -18,7 +18,6 @@ export interface Exam {
 }
 
 const ALL_QUESTIONS: Question[] = [
-    // EXAM 1: 1-20
     { id: 1, text: "Choose the correct answer:", content: "1. My brother and I ............. television every evening.", options: [{ id: 'A', text: "watches" }, { id: 'B', text: "listen" }, { id: 'C', text: "are" }, { id: 'D', text: "watch" }], difficulty: "Easy", correctAnswer: "D" },
     { id: 2, text: "Choose the correct answer:", content: "2. There is a well ................ Minh’s house.", options: [{ id: 'A', text: "behind" }, { id: 'B', text: "next" }, { id: 'C', text: "near to" }, { id: 'D', text: "to the left" }], difficulty: "Easy", correctAnswer: "A" },
     { id: 3, text: "Choose the correct answer:", content: "3. A paddy-field is a rice .......................... .", options: [{ id: 'A', text: "yard" }, { id: 'B', text: "garden" }, { id: 'C', text: "paddy" }, { id: 'D', text: "park" }], difficulty: "Easy", correctAnswer: "C" },
@@ -40,7 +39,6 @@ const ALL_QUESTIONS: Question[] = [
     { id: 19, text: "Choose the correct answer:", content: "20. What is your favorite .................... , Mai ? _ I like fish.", options: [{ id: 'A', text: "vegetables" }, { id: 'B', text: "drinks" }, { id: 'C', text: "meat" }, { id: 'D', text: "food" }], difficulty: "Easy", correctAnswer: "D" },
     { id: 20, text: "Choose the correct answer:", content: "21. He doesn’t want .................................. a movie.", options: [{ id: 'A', text: "see" }, { id: 'B', text: "to see" }, { id: 'C', text: "seeing" }, { id: 'D', text: "watch" }], difficulty: "Medium", correctAnswer: "B" },
 
-    // EXAM 2: 21-40
     { id: 21, text: "Choose the correct answer:", content: "22. It’s never ................. in winter.", options: [{ id: 'A', text: "hot" }, { id: 'B', text: "cold" }, { id: 'C', text: "warm" }, { id: 'D', text: "cool" }], difficulty: "Easy", correctAnswer: "A" },
     { id: 22, text: "Choose the correct answer:", content: "23. How ................. are they going to stay there ? _ For 3 days.", options: [{ id: 'A', text: "many" }, { id: 'B', text: "much" }, { id: 'C', text: "often" }, { id: 'D', text: "long" }], difficulty: "Easy", correctAnswer: "D" },
     { id: 23, text: "Choose the correct answer:", content: "24. They are ........................ aerobics now.", options: [{ id: 'A', text: "play" }, { id: 'B', text: "playing" }, { id: 'C', text: "do" }, { id: 'D', text: "doing" }], difficulty: "Medium", correctAnswer: "D" },
@@ -62,7 +60,6 @@ const ALL_QUESTIONS: Question[] = [
     { id: 39, text: "Choose the correct answer:", content: "40. ..................... do you do when it is hot ?", options: [{ id: 'A', text: "Who" }, { id: 'B', text: "What" }, { id: 'C', text: "When" }, { id: 'D', text: "Where" }], difficulty: "Easy", correctAnswer: "B" },
     { id: 40, text: "Choose the correct answer:", content: "41. How .......................... bananas are there in the fridge?", options: [{ id: 'A', text: "many" }, { id: 'B', text: "much" }, { id: 'C', text: "long" }, { id: 'D', text: "often" }], difficulty: "Easy", correctAnswer: "A" },
 
-    // EXAM 3: 41-60
     { id: 41, text: "Choose the correct answer:", content: "42. The Red River is the ........................ in Viet Nam.", options: [{ id: 'A', text: "longer" }, { id: 'B', text: "very long" }, { id: 'C', text: "long" }, { id: 'D', text: "longest" }], difficulty: "Easy", correctAnswer: "D" },
     { id: 42, text: "Choose the correct answer:", content: "43. There isn’t ....................... milk in the bottle.", options: [{ id: 'A', text: "an" }, { id: 'B', text: "any" }, { id: 'C', text: "a" }, { id: 'D', text: "some" }], difficulty: "Easy", correctAnswer: "B" },
     { id: 43, text: "Choose the correct answer:", content: "44. I’d like some rice. I’m ................................ .", options: [{ id: 'A', text: "hungry" }, { id: 'B', text: "hot" }, { id: 'C', text: "thirsty" }, { id: 'D', text: "full" }], difficulty: "Easy", correctAnswer: "A" },
@@ -84,7 +81,6 @@ const ALL_QUESTIONS: Question[] = [
     { id: 59, text: "Choose the correct answer:", content: "60. ________ are you ? I ‘m fine , thank you .", options: [{ id: 'A', text: "How old" }, { id: 'B', text: "How" }, { id: 'C', text: "What" }, { id: 'D', text: "Where" }], difficulty: "Easy", correctAnswer: "A" },
     { id: 60, text: "Choose the correct answer:", content: "61. ________ students are there in your class ?", options: [{ id: 'A', text: "How much" }, { id: 'B', text: "What" }, { id: 'C', text: "How many" }, { id: 'D', text: "How" }], difficulty: "Easy", correctAnswer: "C" },
 
-    // EXAM 4: 61-80
     { id: 61, text: "Choose the correct answer:", content: "62. ________ is your house ? _ In the country.", options: [{ id: 'A', text: "What" }, { id: 'B', text: "Which" }, { id: 'C', text: "Where" }, { id: 'D', text: "How" }], difficulty: "Easy", correctAnswer: "C" },
     { id: 62, text: "Choose the correct answer:", content: "63. She lives with ________ family.", options: [{ id: 'A', text: "he" }, { id: 'B', text: "her" }, { id: 'C', text: "I" }, { id: 'D', text: "she" }], difficulty: "Easy", correctAnswer: "B" },
     { id: 63, text: "Choose the correct answer:", content: "64. How many _______ are there in your family ?", options: [{ id: 'A', text: "people" }, { id: 'B', text: "students" }, { id: 'C', text: "teachers" }, { id: 'D', text: "peoples" }], difficulty: "Easy", correctAnswer: "A" },
@@ -106,7 +102,6 @@ const ALL_QUESTIONS: Question[] = [
     { id: 79, text: "Choose the correct answer:", content: "80. Hoa and Lan _______ games every afternoon .", options: [{ id: 'A', text: "play" }, { id: 'B', text: "plays" }, { id: 'C', text: "goes" }, { id: 'D', text: "listens" }], difficulty: "Easy", correctAnswer: "A" },
     { id: 80, text: "Choose the correct answer:", content: "81. We watch ________ every evening .", options: [{ id: 'A', text: "music" }, { id: 'B', text: "television" }, { id: 'C', text: "history" }, { id: 'D', text: "breakfast" }], difficulty: "Easy", correctAnswer: "B" },
 
-    // EXAM 5: 81-100
     { id: 81, text: "Choose the correct answer:", content: "82. ________ do they have dinner ? At 6: 00", options: [{ id: 'A', text: "What time" }, { id: 'B', text: "Where" }, { id: 'C', text: "When" }, { id: 'D', text: "What" }], difficulty: "Easy", correctAnswer: "A" },
     { id: 82, text: "Choose the correct answer:", content: "83. There are __________ days in a week.", options: [{ id: 'A', text: "six" }, { id: 'B', text: "seven" }, { id: 'C', text: "eight" }, { id: 'D', text: "nine" }], difficulty: "Easy", correctAnswer: "B" },
     { id: 83, text: "Choose the correct answer:", content: "84. ______ do you have English ? _ On Monday and Friday", options: [{ id: 'A', text: "What time" }, { id: 'B', text: "What" }, { id: 'C', text: "When" }, { id: 'D', text: "Where" }], difficulty: "Easy", correctAnswer: "C" },
